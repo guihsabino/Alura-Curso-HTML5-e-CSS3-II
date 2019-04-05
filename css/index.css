@@ -7,11 +7,17 @@
 
 /* Seção de Titulo Principal */
 
-.palavra-home {
+.palavras-home {
     font-weight: bold;
     font-family: "Shadows Into Light";
     color: #D5447E;
     font-size: 0.7em;
+    perspective: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .Twitter {
@@ -26,92 +32,86 @@
     padding: 0.5em 2.0em;
     border-top: #000 solid 0.1em;
     border-bottom: #000 solid 0.1em;
-    transform: translate(137%, -606%)
-    rotate(42deg);
+    transform: translate(137%, -606%) rotate(42deg);
 }
 
 /* Palavras */
 
 .eficiencia {
     position: absolute;
-    top: 20%;
-    left: 80%;
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(-10deg) translateZ(1px);
 }
 
 .boas-praticas {
     position: absolute;
-    top: 15%;
+    top: 20%;
     right: 75%;
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+    transform: translate(-50%, -50%) rotate(-10deg);
 }
 
 .codigo-limpo {
     position: absolute;
-    top: 7%;
-    left: 60%;
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
+    top: 17%;
+    left: 68%;
+    transform: translate(-50%, -50%) rotate(20deg)translateZ(0.8px);
 }
 
 .css3 {
     position: absolute;
-    top: 0%;
+    top: 10%;
     right: 65%;
+    transform: translate(-50%, -50%);
 }
 
 .html5 {
     position: absolute;
-    top: 5%;
-    right: 90%;
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
+    top: 13%;
+    right: 79%;
+    transform: translate(-50%, -50%) rotate(-20deg) translateZ(0.8px);
 }
 
 .javascript {
     position: absolute;
     top: 55%;
-    left: 80%;
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg);
+    left: 90%;
+    transform: translate(-50%, -50%) rotate(15deg);
 }
 
 .acessibilidade {
     position: absolute;
     top: 60%;
-    right: 80%;
+    right: 65%;
+    transform: translate(-50%, -50%);
 }
 
 .responsivo {
     position: absolute;
-    top: 44%;
-    right: 80%;
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+    top: 50%;
+    right: 72%;
+    transform: translate(-50%, -50%) rotate(-10deg)translateZ(1px);
 }
 
 .otimizacoes {
     position: absolute;
-    top: 36%;
-    left: 72%;
-    -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg);
+    top: 30%;
+    left: 76%;
+    transform: translate(-50%, -50%) rotate(-15deg) translateZ(1px);
 }
 
 .agilidade {
     position: absolute;
-    top: 30%;
-    right: 91%;
+    top: 35%;
+    right: 81%;
+    transform: translate(-50%, -50%);
 }
 
 .design {
     position: absolute;
-    top: 30%;
-    right: 70%;
-    -webkit-transform: rotate(12deg);
-    transform: rotate(12deg);
+    top: 40%;
+    right: 55%;
+    transform: translate(-50%, -50%) rotate(12deg) translateZ(2px);
 }
 
 /* Seção de Saudação  */
@@ -255,4 +255,71 @@ main {
     width: 100%;
     padding-bottom: 0;
     float: none;
+}
+
+/* Seção do Cubo */
+
+.cubo {
+    perspective: 6px;
+    transform-style: preserve-3d;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.face {
+    display: inline-block;
+    position: absolute;
+    padding: 0.5em 2.0em;
+    border: #000 solid 0.1em;
+}
+
+.cima {
+    top: -150%;
+    right: 70%;
+    width: 20px;
+    height: 60px;
+    transform: translate(-50%, 920%);
+}
+
+.baixo {
+    top: -150%;
+    right: 70%;
+    width: 20px;
+    height: 60px;
+    transform: translate(-50%, 1020%);
+}
+
+.esquerda {
+    top: -150%;
+    right: 70%;
+    width: 20px;
+    height: 60px;
+    transform: translate(-50%, 1020%);
+}
+
+.direita {
+    top: -150%;
+    right: 70%;
+    width: 20px;
+    height: 60px;
+    transform: translate(-50%, 1020%);
+}
+
+.frente {
+    top: -150%;
+    right: 70%;
+    width: 20px;
+    height: 60px;
+    transform: translate(-50%, 1020%);
+}
+
+.costas {
+    top: -150%;
+    right: 70%;
+    width: 20px;
+    height: 60px;
+    transform: translate(-50%, 1020%);
 }
