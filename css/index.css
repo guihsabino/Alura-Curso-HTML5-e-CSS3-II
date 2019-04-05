@@ -1,0 +1,258 @@
+/* Foto do Index  */
+
+.foto-home {
+    height: 4em;
+    border-radius: 1000%;
+}
+
+/* Seção de Titulo Principal */
+
+.palavra-home {
+    font-weight: bold;
+    font-family: "Shadows Into Light";
+    color: #D5447E;
+    font-size: 0.7em;
+}
+
+.Twitter {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #FFF;
+    background-color: #3C1D3D;
+    position: absolute;
+    padding: 0.5em 2.0em;
+    border-top: #000 solid 0.1em;
+    border-bottom: #000 solid 0.1em;
+    transform: translate(137%, -606%)
+    rotate(42deg);
+}
+
+/* Palavras */
+
+.eficiencia {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.boas-praticas {
+    position: absolute;
+    top: 15%;
+    right: 75%;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.codigo-limpo {
+    position: absolute;
+    top: 7%;
+    left: 60%;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.css3 {
+    position: absolute;
+    top: 0%;
+    right: 65%;
+}
+
+.html5 {
+    position: absolute;
+    top: 5%;
+    right: 90%;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.javascript {
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.acessibilidade {
+    position: absolute;
+    top: 60%;
+    right: 80%;
+}
+
+.responsivo {
+    position: absolute;
+    top: 44%;
+    right: 80%;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.otimizacoes {
+    position: absolute;
+    top: 36%;
+    left: 72%;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+
+.agilidade {
+    position: absolute;
+    top: 30%;
+    right: 91%;
+}
+
+.design {
+    position: absolute;
+    top: 30%;
+    right: 70%;
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+}
+
+/* Seção de Saudação  */
+
+.sites-maravilhosos {
+    display: inline-block;
+    transform: skew(-25deg) rotate(-5deg) scale(0.95);
+}
+
+.saudacao p {
+    font-size: 1.5em;
+    color: #99A;
+    line-height: 1;
+    padding: 2em;
+}
+
+.saudacao-inicio {
+    font-size: 3em;
+    color: #889;
+}
+
+.saudacao-ultima-linha {
+    text-align: right;
+    display: block;
+}
+
+.saudacao strong {
+    font-size: 2em;
+    color: #000;
+}
+
+.saudacao em {
+    color: #851944;
+    font-size: 4em;
+}
+
+/* Seção de Botoes */
+
+.botao-index {
+    font-size: 1.25em;
+    background-color: #851944;
+    color: #FFF;
+    padding: .5em;
+    border: .2em solid black;
+    width: 40ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+}
+
+/* Seção para Inicios de Partes  */
+
+.secao-inicio {
+    padding: 2em;
+}
+
+.secao-inicio h2 {
+    font-size: 3em;
+    text-shadow: 2px 2px #000;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+
+.trabalhos {
+    background-color: #3C1D3D;
+    border-top: .5em solid #000;
+    border-bottom: .5em solid #000;
+}
+
+.trabalhos h2 {
+    color: #FFF;
+}
+
+.trabalhos ul {
+    overflow: hidden;
+    border: .5em solid black;
+}
+
+/* Seção para os Trabalhos  */
+
+.trabalhos li {
+    float: left;
+    width: 33.333%;
+}
+
+.trabalhos img {
+    width: 100%;
+    display: block;
+}
+
+/* Seção para Blogs  */
+
+.blog {
+    background-color: #999;
+    color: #FFF;
+    border-bottom: .5em solid #851944;
+    position: relative;
+}
+
+.blog small {
+    position: relative;
+    top: -2em;
+}
+
+.inicio-post {
+    background: #FFF;
+    color: #000;
+    position: absolute;
+    top: 1em;
+    left: 11em;
+    height: 7em;
+    padding: 1em;
+    margin: 6em;
+}
+
+.blog li a {
+    color: #FCF;
+    padding: .5em;
+    display: block;
+}
+
+/* Seção para rodapés  */
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 2em;
+}
+
+footer h2 {
+    font-size: 3em;
+}
+
+footer a {
+    color: #F99;
+}
+
+/* Seção do main  */
+
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}
