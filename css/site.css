@@ -37,6 +37,10 @@ main a {
     color: #851944;
 }
 
+main a:hover, main a:focus {
+    color: red;
+}
+
 main p {
     text-align: justify;
     margin: 20px 0;
@@ -55,21 +59,27 @@ main p {
     text-transform: lowercase;
 }
 
+.navegacao-site a:hover, .navegacao-site a:focus {
+    text-shadow: 0 0 10px rgba(245, 0, 135, 0.719);
+}
+
 .navegacao-site h1 {
     font-size: 30px;
     margin-bottom: 25px;
 }
 
 .rodape-pagina {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.884);
     padding: 20px;
     clear: both;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
     box-sizing: border-box;
+    background-image: radial-gradient(ellipse at left bottom, rgba(60, 29, 61, 0.8), rgba(71, 34, 71, 0.548) 65%, black 65%, black 70%, transparent 70%, transparent);
+    width: 110%;
+    background-size: 20% 100%;
+    background-repeat: no-repeat;
 }
 
 .container {

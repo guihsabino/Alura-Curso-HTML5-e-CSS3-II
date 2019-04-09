@@ -1,3 +1,5 @@
+/* Área de Citações */
+
 .citacao-bio {
     background-color: #D9E5E3;
     border: 10px solid #C2CCCA;
@@ -7,12 +9,30 @@
     box-sizing: border-box;
 }
 
-.petrobras {
+/* Separando as citações por ímpar e par */
+
+blockquote:nth-of-type(2n) {
     float: left;
     margin-left: 0;
 }
 
-.fiat {
+blockquote:nth-of-type(2n+1) {
     float: right;
     margin-right: 0;
+}
+
+/* Evidenciando as citações */
+
+blockquote:nth-of-type(2n):hover, blockquote:nth-of-type(2n):focus {
+    position: relative;
+    transform: translate(7%, -5%) rotate(-8deg) translateZ(15px) scale(1.2);
+    z-index: 9999;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+}
+
+blockquote:nth-of-type(2n+1):hover, blockquote:nth-of-type(2n+1):focus {
+    position: relative;
+    transform: translate(7%, -5%) rotate(8deg) translateZ(15px) scale(1.2);
+    z-index: 9999;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
 }

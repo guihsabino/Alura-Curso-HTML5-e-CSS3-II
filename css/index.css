@@ -21,7 +21,7 @@ body {
 /* Seção de Titulo Principal */
 
 .titulo-principal {
-    background-image: linear-gradient(to bottom, rgb(49, 48, 48) 5%, #80143f);
+    background-image: radial-gradient(#80143f 20%, rgba(32, 31, 31, 0.918));
     background-size: 100%;
 }
 
@@ -191,6 +191,10 @@ body {
     box-shadow: 0 0 1em black, inset 0 0 0.5em white;
 }
 
+.botao-index:hover, .botao-index:focus {
+    background-color: rgb(116, 62, 92);
+}
+
 /* Seção para Inicios de Partes  */
 
 .secao-inicio {
@@ -211,7 +215,7 @@ body {
     background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
-    background-image: linear-gradient(to bottom left, rgba(26, 23, 23, 0.87) 10px, rgba(250, 244, 244, 0));
+    background-image: linear-gradient(to bottom left, #3C1D3D 10px, rgba(0, 0, 0, 0.1));
     background-repeat: repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -243,6 +247,10 @@ body {
     color: #FFF;
     border-bottom: .5em solid #851944;
     position: relative;
+    background-image: linear-gradient(to bottom right, #999 10px, rgba(255, 255, 255, 0.1));
+    background-repeat: repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 .blog small {
@@ -259,6 +267,17 @@ body {
     height: 7em;
     padding: 1em;
     margin: 6em;
+    display: none;
+}
+
+.blog a:hover+.inicio-post, .blog a:focus+.inicio-post {
+    display: block;
+}
+
+.blog ol a:hover, .blog ol a:focus {
+    background-color: rgba(242, 255, 252, 0.151);
+    color: #F26;
+    width: 22.3%;
 }
 
 .blog li a {
@@ -268,6 +287,10 @@ body {
 }
 
 /* Seção para rodapés  */
+
+footer a:hover, footer a:focus {
+    color: red;
+}
 
 footer {
     background-color: #000;
