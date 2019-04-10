@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contato - João da Silva</title>
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+</head>
+
+<body>
+    <main>
+        <h1 class="titulo-principal">Contato</h1>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend><strong>Dados Pessoais</strong></legend>
+                    <label for="Nome">Nome: </label>
+                    <input id="nome" type="text" name="nome" required autofocus placeholder="Digite seu nome Aqui"
+                        pattern="[A-Za-z ']{4,}"
+                        title="Seu nome deve conter somente: letras (maiúsculas e minúsculas), espaços e apóstrofo, com no mínimo 4 símbolos">
+
+                    <label for="Email">Email: </label>
+                    <input type="email" id="Email" name="email" placeholder="seu@email.com" required>
+                </fieldset>
+
+                <fieldset>
+                    <select name="assunto">
+                        <option value="servico" selected>Serviço</option>
+                        <option value="blog">Blog</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <input id="Outro" name="outro" placeholder="Descreva Aqui o Assunto">
+                </fieldset>
+
+                <label for="Mensagem">Mensagem: </label>
+                <textarea id="Mensagem" name="mensagem" cols="45" rows="6" placeholder="Digite seu texto aqui"
+                    required></textarea>
+
+                <button type="submit"><strong>Enviar para Mim</strong></button>
+
+            </form>
+        </div>
+    </main>
+    <img src="imagens/eu.jpg" alt="Minha foto" class="minha-foto">
+    <aside class="navegacao-site">
+        <h1>João da Silva</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="bio.html">Sobre mim</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <ul class="icones-redes-sociais">
+            <li>
+                <a href="https://github.com/joaodasilva" class="github" data-legenda="Veja meus projetos opensource">
+                    Github
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/joaodasilva" class="twitter" data-legenda="Siga-me no Twitter">
+                    Twitter
+                </a>
+            </li>
+            <li>
+                <a href="https://br.linkedin.com/pub/joão-da-silva/32/4/508" class="linkedin"
+                    data-legenda="Veja meu currículo">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <footer class="rodape-pagina">
+        &copy; João da Silva 2019
+    </footer>
+</body>
+
+</html>

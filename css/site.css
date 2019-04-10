@@ -108,6 +108,32 @@ em {
     text-indent: -99999px;
 }
 
+.icones-redes-sociais a {
+    position: relative;
+}
+
+.icones-redes-sociais a:hover::after, .icones-redes-sociais a:focus::after {
+    content: attr(data-legenda);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: black;
+    font-size: .75em;
+}
+
+.icones-redes-sociais a:hover::before, .icones-redes-sociais a:focus::before {
+    content: '';
+    width: 1em;
+    height: 0.8em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.6em) rotate(60deg);
+}
+
 .github {
     background-image: url(../imagens/github.png);
 }

@@ -9,6 +9,17 @@
     box-sizing: border-box;
 }
 
+/* Estilizando a caixa de citações */
+
+blockquote:before {
+    content: '"';
+    font-size: 7em;
+    position: absolute;
+    transform: translate(-32%, -30%);
+    color: #bbb;
+    font-family: "Arial", "Times New Roman", serif;
+}
+
 /* Separando as citações por ímpar e par */
 
 blockquote:nth-of-type(2n) {
@@ -35,4 +46,11 @@ blockquote:nth-of-type(2n+1):hover, blockquote:nth-of-type(2n+1):focus {
     transform: translate(7%, -5%) rotate(8deg) translateZ(15px) scale(1.2);
     z-index: 9999;
     box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+}
+
+.container>p::first-letter {
+    color: #3C1D3D;
+    font-weight: bold;
+    font-size: 3em;
+    text-shadow: 1.5px 1.5px #000;
 }
