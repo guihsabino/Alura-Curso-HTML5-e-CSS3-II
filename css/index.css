@@ -35,6 +35,15 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    animation: aparece 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
 }
 
 .Twitter {
@@ -49,7 +58,10 @@ body {
     padding: 0.5em 2.0em;
     border-top: #000 solid 0.1em;
     border-bottom: #000 solid 0.1em;
-    transform: translate(137%, -606%) rotate(42deg);
+    transform: translate(calc(.707 * (15.5em - 100%) + 100%), calc(-.707 * 22em)) rotate(44deg);
+    animation: aparece 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
 }
 
 /* Palavras */
@@ -149,6 +161,10 @@ body {
     transform: skew(-25deg) rotate(-5deg) scale(0.95);
 }
 
+.sites-maravilhosos:hover, .sites-maravilhosos:focus {
+    animation-play-state: paused;
+}
+
 .saudacao p {
     font-size: 1.5em;
     color: #99A;
@@ -174,6 +190,19 @@ body {
 .saudacao em {
     color: #851944;
     font-size: 4em;
+    position: relative;
+    animation: flutuar 0.8s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flutuar {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
 }
 
 /* Seção de Botoes */
@@ -189,10 +218,14 @@ body {
     display: block;
     text-align: center;
     box-shadow: 0 0 1em black, inset 0 0 0.5em white;
+    text-decoration: none;
+    transition: 0.2s ease-in;
 }
 
-.botao-index:hover, .botao-index:focus {
-    background-color: rgb(116, 62, 92);
+.botao-index:focus, .botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
 }
 
 /* Seção para Inicios de Partes  */

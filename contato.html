@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
 </head>
@@ -18,30 +19,33 @@
         <div class="container">
             <form>
                 <fieldset>
-                    <legend><strong>Dados Pessoais</strong></legend>
-                    <label for="Nome">Nome: </label>
-                    <input id="nome" type="text" name="nome" required autofocus placeholder="Digite seu nome Aqui"
-                        pattern="[A-Za-z ']{4,}"
-                        title="Seu nome deve conter somente: letras (maiúsculas e minúsculas), espaços e apóstrofo, com no mínimo 4 símbolos">
+                    <legend>Dados Pessoais</legend>
+                    <p><label for="Nome">Nome: </label></p>
+                    <p><input id="nome" class="dados-obrigatorios" type="text" name="nome" required autofocus
+                            placeholder="Digite seu nome Aqui" pattern="[A-Za-z ']{4,}"
+                            title="Seu nome deve conter somente: letras (maiúsculas e minúsculas), espaços e apóstrofo, com no mínimo 4 símbolos">
+                    </p>
 
-                    <label for="Email">Email: </label>
-                    <input type="email" id="Email" name="email" placeholder="seu@email.com" required>
+                    <p><label for="Email">Email: </label></p>
+                    <p><input type="email" id="email" class="dados-obrigatorios" name="email"
+                            placeholder="seu@email.com" required></p>
                 </fieldset>
 
                 <fieldset>
+                    <legend>Assunto</legend>
                     <select name="assunto">
                         <option value="servico" selected>Serviço</option>
                         <option value="blog">Blog</option>
-                        <option value="outro">Outro</option>
+                        <option value="outro" class="selecao-outro">Outro</option>
                     </select>
-                    <input id="Outro" name="outro" placeholder="Descreva Aqui o Assunto">
+                    <input id="Outro" class="outro-assunto" name="outro" placeholder="Descreva Aqui o Assunto">
                 </fieldset>
 
-                <label for="Mensagem">Mensagem: </label>
+                <p><label for="Mensagem" class="campo-mensagem">Mensagem: </label></p>
                 <textarea id="Mensagem" name="mensagem" cols="45" rows="6" placeholder="Digite seu texto aqui"
                     required></textarea>
 
-                <button type="submit"><strong>Enviar para Mim</strong></button>
+                <p><button type="submit"><strong>Enviar para Mim</strong></button></p>
 
             </form>
         </div>

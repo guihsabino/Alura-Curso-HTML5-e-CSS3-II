@@ -147,7 +147,7 @@ em {
 }
 
 main {
-    width: 80%;
+    width: calc(100% - 0.9 * 300px);
     float: left;
     padding-bottom: 80px;
 }
@@ -159,7 +159,7 @@ main {
 }
 
 .navegacao-site {
-    width: 20%;
+    width: calc(0.9 * 300px);
     float: right;
     position: relative;
     top: 300px;
@@ -170,4 +170,12 @@ main {
     top: 0;
     right: 0;
     height: 300px;
+}
+
+input:focus, textarea:focus {
+    background-color: rgba(241, 241, 166, 0.685);
+}
+
+input:invalid {
+    box-shadow: 0 0 3px red;
 }

@@ -7,6 +7,8 @@
     margin: 20px 40px;
     width: 250px;
     box-sizing: border-box;
+    transition: transform 0.5s linear, box-shadow 1s ease-in-out;
+    transition-delay: 0s, 0.5s; 
 }
 
 /* Estilizando a caixa de citações */
@@ -53,4 +55,35 @@ blockquote:nth-of-type(2n+1):hover, blockquote:nth-of-type(2n+1):focus {
     font-weight: bold;
     font-size: 3em;
     text-shadow: 1.5px 1.5px #000;
+}
+
+/* Estilizando as tabelas */
+
+.habilidades th {
+    font-weight: bold;
+    background-color: #851944;
+    color: white;
+}
+
+.habilidades thead th {
+    background-color: #3C1D3D;
+}
+
+.habilidades td {
+    background-color: #eee;
+}
+
+.habilidades th, .habilidades td {
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.habilidades {
+    border-collapse: separate;
+    border-spacing: .25em;
+}
+
+.habilidades {
+    margin: 1em 0;
 }
